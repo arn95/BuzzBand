@@ -54,6 +54,9 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
+Pods/
+Podfile.lock
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa

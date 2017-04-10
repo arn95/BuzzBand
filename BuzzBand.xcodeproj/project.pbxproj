@@ -13,9 +13,11 @@
 		96E01E751E9C05F3008675C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E741E9C05F3008675C7 /* Assets.xcassets */; };
 		96E01E781E9C05F3008675C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */; };
 		96E01E801E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */; };
+		B4C41AA0F0919E665A0D79D9 /* Pods_BuzzBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A30F011EF9030FC76C2F89 /* Pods-BuzzBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.debug.xcconfig"; sourceTree = "<group>"; };
 		96E01E6A1E9C05F3008675C7 /* BuzzBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E01E6F1E9C05F3008675C7 /* BBPairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPairController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		96E01E771E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E01E791E9C05F3008675C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "ezgif.com-video-to-gif.gif"; path = "../../../../../Downloads/ezgif.com-video-to-gif.gif"; sourceTree = "<group>"; };
+		B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C41AA0F0919E665A0D79D9 /* Pods_BuzzBand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				96E01E6C1E9C05F3008675C7 /* BuzzBand */,
 				96E01E6B1E9C05F3008675C7 /* Products */,
+				E84273DE032166413467C888 /* Pods */,
+				DFCED5DC17CA5C593F6DA432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = BuzzBand;
 			sourceTree = "<group>";
 		};
+		DFCED5DC17CA5C593F6DA432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E84273DE032166413467C888 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18A30F011EF9030FC76C2F89 /* Pods-BuzzBand.debug.xcconfig */,
+				BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96E01E7C1E9C05F3008675C7 /* Build configuration list for PBXNativeTarget "BuzzBand" */;
 			buildPhases = (
+				7F32F68368B1BBF2C9D71D05 /* [CP] Check Pods Manifest.lock */,
 				96E01E661E9C05F3008675C7 /* Sources */,
 				96E01E671E9C05F3008675C7 /* Frameworks */,
 				96E01E681E9C05F3008675C7 /* Resources */,
+				DCFD92EF384F516828A07B77 /* [CP] Embed Pods Frameworks */,
+				BAE1F40167FC5FF85E5540EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F32F68368B1BBF2C9D71D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE1F40167FC5FF85E5540EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFD92EF384F516828A07B77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96E01E661E9C05F3008675C7 /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		96E01E7D1E9C05F3008675C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A30F011EF9030FC76C2F89 /* Pods-BuzzBand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZD8A279B6;
@@ -274,11 +350,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arn95.BuzzBand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		96E01E7E1E9C05F3008675C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WZD8A279B6;
@@ -288,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arn95.BuzzBand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
