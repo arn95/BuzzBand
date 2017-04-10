@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BBPairController: UIViewController {
+class BBPairController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate {
 
     @IBOutlet weak var nearbyDevicesTable: UITableView!
     
@@ -22,11 +22,6 @@ class BBPairController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
-    
-
 
 }
 

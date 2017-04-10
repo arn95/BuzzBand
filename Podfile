@@ -1,5 +1,6 @@
+platform :ios, '10.3'
 target 'BuzzBand' do
-	pod 'Bean-iOS-OSX-SDK'
+    pod 'Bean-iOS-OSX-SDK'
 end
 
 pre_install do |install|
