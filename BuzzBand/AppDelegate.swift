@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Bean_iOS_OSX_SDK
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

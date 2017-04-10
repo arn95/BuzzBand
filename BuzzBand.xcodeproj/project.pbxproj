@@ -13,10 +13,11 @@
 		96E01E751E9C05F3008675C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E741E9C05F3008675C7 /* Assets.xcassets */; };
 		96E01E781E9C05F3008675C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */; };
 		96E01E801E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */; };
-		B4C41AA0F0919E665A0D79D9 /* Pods_BuzzBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */; };
+		EF0091E309370CCE572407BB /* libPods-BuzzBand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuzzBand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A30F011EF9030FC76C2F89 /* Pods-BuzzBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.debug.xcconfig"; sourceTree = "<group>"; };
 		96E01E6A1E9C05F3008675C7 /* BuzzBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		96E01E771E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E01E791E9C05F3008675C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "ezgif.com-video-to-gif.gif"; path = "../../../../../Downloads/ezgif.com-video-to-gif.gif"; sourceTree = "<group>"; };
-		B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C41AA0F0919E665A0D79D9 /* Pods_BuzzBand.framework in Frameworks */,
+				EF0091E309370CCE572407BB /* libPods-BuzzBand.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		DFCED5DC17CA5C593F6DA432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5124822E384210B9A5A80DB /* Pods_BuzzBand.framework */,
+				0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

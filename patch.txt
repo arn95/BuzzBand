@@ -1,0 +1,46 @@
+--- orig	2017-04-10 17:23:44.000000000 -0400
++++ mine	2017-04-10 17:40:06.000000000 -0400
+@@ -44,7 +44,7 @@
+ typedef uint32 PTD_UINT32;
+ typedef uint16 PTD_UINT16;
+ typedef uint8 PTD_UINT8;
+-typedef int8  PTD_INT8;
++typedef int8 PTD_INT8;
+ typedef int16 PTD_INT16;
+ 
+ /* ----------- Arduino ----------- */
+@@ -52,8 +52,8 @@
+ 
+ typedef uint32_t PTD_UINT32;
+ typedef uint16_t PTD_UINT16;
+-typedef uint8_t  PTD_UINT8;
+-typedef int8_t   PTD_INT8;
++typedef uint8_t PTD_UINT8;
++typedef int8_t PTD_INT8;
+ typedef int16_t PTD_INT16;
+ 
+ /* ----------- Objective-C ----------- */
+@@ -61,13 +61,20 @@
+ 
+ typedef UInt32 PTD_UINT32;
+ typedef UInt16 PTD_UINT16;
+-typedef UInt8  PTD_UINT8;
++typedef UInt8 PTD_UINT8;
+ typedef int8_t PTD_INT8;
+ typedef SInt16 PTD_INT16;
+ 
+ #else
+-#error define a platform/language that you are building for
+-#endif
+ 
++/* ----------- Swift ----------- */
++
++typedef UInt32 PTD_UINT32;
++typedef UInt16 PTD_UINT16;
++typedef UInt8 PTD_UINT8;
++typedef SInt8 PTD_INT8;
++typedef SInt16 PTD_INT16;
++
++#endif
+ 
+ #endif
