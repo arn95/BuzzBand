@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		96E01E6E1E9C05F3008675C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */; };
 		96E01E701E9C05F3008675C7 /* BBPairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01E6F1E9C05F3008675C7 /* BBPairController.swift */; };
-		96E01E731E9C05F3008675C7 /* BBPairController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E711E9C05F3008675C7 /* BBPairController.storyboard */; };
+		96E01E731E9C05F3008675C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E711E9C05F3008675C7 /* Main.storyboard */; };
 		96E01E751E9C05F3008675C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E741E9C05F3008675C7 /* Assets.xcassets */; };
 		96E01E781E9C05F3008675C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */; };
-		96E01E801E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */; };
+		96E01E801E9C0B1C008675C7 /* plasma.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E7F1E9C0B1C008675C7 /* plasma.gif */; };
 		EF0091E309370CCE572407BB /* libPods-BuzzBand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +22,11 @@
 		96E01E6A1E9C05F3008675C7 /* BuzzBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E01E6F1E9C05F3008675C7 /* BBPairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPairController.swift; sourceTree = "<group>"; };
-		96E01E721E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BBPairController.storyboard; sourceTree = "<group>"; };
+		96E01E721E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E01E741E9C05F3008675C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E01E771E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E01E791E9C05F3008675C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "ezgif.com-video-to-gif.gif"; path = "../../../../../Downloads/ezgif.com-video-to-gif.gif"; sourceTree = "<group>"; };
+		96E01E7F1E9C0B1C008675C7 /* plasma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = plasma.gif; path = ../../../../../Downloads/plasma.gif; sourceTree = "<group>"; };
 		BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 			children = (
 				96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */,
 				96E01E6F1E9C05F3008675C7 /* BBPairController.swift */,
-				96E01E711E9C05F3008675C7 /* BBPairController.storyboard */,
-				96E01E7F1E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif */,
+				96E01E711E9C05F3008675C7 /* Main.storyboard */,
+				96E01E7F1E9C0B1C008675C7 /* plasma.gif */,
 				96E01E741E9C05F3008675C7 /* Assets.xcassets */,
 				96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */,
 				96E01E791E9C05F3008675C7 /* Info.plist */,
@@ -156,8 +156,8 @@
 			files = (
 				96E01E781E9C05F3008675C7 /* LaunchScreen.storyboard in Resources */,
 				96E01E751E9C05F3008675C7 /* Assets.xcassets in Resources */,
-				96E01E731E9C05F3008675C7 /* BBPairController.storyboard in Resources */,
-				96E01E801E9C0B1C008675C7 /* ezgif.com-video-to-gif.gif in Resources */,
+				96E01E731E9C05F3008675C7 /* Main.storyboard in Resources */,
+				96E01E801E9C0B1C008675C7 /* plasma.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,12 +224,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		96E01E711E9C05F3008675C7 /* BBPairController.storyboard */ = {
+		96E01E711E9C05F3008675C7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				96E01E721E9C05F3008675C7 /* Base */,
 			);
-			name = BBPairController.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */ = {

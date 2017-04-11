@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qtZ-Lc-SX2">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="nTC-8s-cQM">
+            <objects>
+                <navigationController id="qtZ-Lc-SX2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cuj-k1-eAy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ppg-RH-2RE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxY-rq-Qaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1501" y="-73"/>
+        </scene>
+        <!--Pair Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BuzzBand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BBPairController" customModule="BuzzBand" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,10 +38,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wireless-internet" translatesAutoresizingMaskIntoConstraints="NO" id="X7M-0O-tSA">
-                                <rect key="frame" x="100" y="50" width="214" height="206"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="247" image="wireless-internet" translatesAutoresizingMaskIntoConstraints="NO" id="X7M-0O-tSA">
+                                <rect key="frame" x="100" y="94" width="214" height="162"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="ezgif.com-video-to-gif.gif" translatesAutoresizingMaskIntoConstraints="NO" id="PF5-cS-9mH">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="plasma.gif" translatesAutoresizingMaskIntoConstraints="NO" id="PF5-cS-9mH">
                                 <rect key="frame" x="0.0" y="286" width="414" height="450"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -35,43 +51,35 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWv-8h-G9z">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="KWv-8h-G9z">
                                 <rect key="frame" x="0.0" y="286" width="414" height="450"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Y5B-8Q-JHn">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Y5B-8Q-JHn" userLabel="VisualEffectView">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8T3-mA-N7Q">
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-Ua-THQ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="v4l-5L-pBJ" style="IBUITableViewCellStyleDefault" id="xk7-Ru-0FS">
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="deviceCell" id="5J5-da-VlW">
                                                     <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xk7-Ru-0FS" id="5tf-bT-LGa">
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5J5-da-VlW" id="Q8v-Nu-ibu">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v4l-5L-pBJ">
-                                                                <rect key="frame" x="15" y="0.0" width="384" height="44"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </tableViewCellContentView>
                                                 </tableViewCell>
                                             </prototypes>
-                                            <sections/>
                                         </tableView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="8T3-mA-N7Q" firstAttribute="top" secondItem="Y5B-8Q-JHn" secondAttribute="top" id="1ka-p8-Cl7"/>
-                                        <constraint firstAttribute="trailing" secondItem="8T3-mA-N7Q" secondAttribute="trailing" id="2rh-Z4-9nZ"/>
-                                        <constraint firstAttribute="bottom" secondItem="8T3-mA-N7Q" secondAttribute="bottom" id="4SF-B7-79e"/>
-                                        <constraint firstItem="8T3-mA-N7Q" firstAttribute="leading" secondItem="Y5B-8Q-JHn" secondAttribute="leading" id="UWf-3P-7sU"/>
+                                        <constraint firstItem="bUJ-Ua-THQ" firstAttribute="height" secondItem="Y5B-8Q-JHn" secondAttribute="height" id="Lzb-dY-wQb"/>
+                                        <constraint firstAttribute="bottom" secondItem="bUJ-Ua-THQ" secondAttribute="bottom" id="TM6-AN-4dT"/>
+                                        <constraint firstItem="bUJ-Ua-THQ" firstAttribute="leading" secondItem="Y5B-8Q-JHn" secondAttribute="leading" id="ick-Dn-7dp"/>
+                                        <constraint firstAttribute="trailing" secondItem="bUJ-Ua-THQ" secondAttribute="trailing" id="sGc-1o-QRE"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -103,17 +111,18 @@
                             <constraint firstItem="w6R-tf-gUG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xpG-eE-gLM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3bT-WQ-c1U"/>
                     <connections>
-                        <outlet property="nearbyDevicesTable" destination="8T3-mA-N7Q" id="fJR-da-Nfz"/>
+                        <outlet property="nearbyDevicesTable" destination="bUJ-Ua-THQ" id="l9Z-y2-ojj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.333333333333336" y="36.684782608695656"/>
+            <point key="canvasLocation" x="-480" y="-73"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ezgif.com-video-to-gif.gif" width="800" height="450"/>
+        <image name="plasma.gif" width="800" height="450"/>
         <image name="wireless-internet" width="170" height="170"/>
     </resources>
 </document>
