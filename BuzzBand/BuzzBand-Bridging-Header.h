@@ -9,7 +9,5 @@
 #ifndef BuzzBand_Bridging_Header_h
 #define BuzzBand_Bridging_Header_h
 
-#import <PTDBeanManager.h>
-
 
 #endif /* BuzzBand_Bridging_Header_h */

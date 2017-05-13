@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961237851EB95E1300FD4418 /* BBTransmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961237841EB95E1300FD4418 /* BBTransmission.swift */; };
+		962A4A171EB573900036E49A /* BBBeanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A4A161EB573900036E49A /* BBBeanController.swift */; };
+		96C0A7761E9D50DF00F1F059 /* BBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A7751E9D50DF00F1F059 /* BBExtensions.swift */; };
+		96C0A7791E9D53E900F1F059 /* BBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A7781E9D53E900F1F059 /* BBColors.swift */; };
+		96C0A7811E9D77DC00F1F059 /* Bean_iOS_OSX_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C0A77F1E9D77DC00F1F059 /* Bean_iOS_OSX_SDK.framework */; };
+		96C0A7821E9D77DC00F1F059 /* RPCircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C0A7801E9D77DC00F1F059 /* RPCircularProgress.framework */; };
 		96E01E6E1E9C05F3008675C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */; };
 		96E01E701E9C05F3008675C7 /* BBPairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01E6F1E9C05F3008675C7 /* BBPairController.swift */; };
 		96E01E731E9C05F3008675C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E711E9C05F3008675C7 /* Main.storyboard */; };
 		96E01E751E9C05F3008675C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E741E9C05F3008675C7 /* Assets.xcassets */; };
 		96E01E781E9C05F3008675C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */; };
 		96E01E801E9C0B1C008675C7 /* plasma.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96E01E7F1E9C0B1C008675C7 /* plasma.gif */; };
-		EF0091E309370CCE572407BB /* libPods-BuzzBand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */; };
+		DD70BC099249453AE90D8AC1 /* Pods_BuzzBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F2773E5E81367AACC3FDE /* Pods_BuzzBand.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuzzBand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A30F011EF9030FC76C2F89 /* Pods-BuzzBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.debug.xcconfig"; sourceTree = "<group>"; };
+		9612377D1EB5C09C00FD4418 /* BuzzBand-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BuzzBand-Bridging-Header.h"; sourceTree = "<group>"; };
+		9612377E1EB637BD00FD4418 /* CountdownLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CountdownLabel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BuzzBand-aiavzfzuovakjwcpxdldjnqtzlqi/Build/Products/Debug-iphoneos/CountdownLabel/CountdownLabel.framework"; sourceTree = "<group>"; };
+		961237841EB95E1300FD4418 /* BBTransmission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBTransmission.swift; sourceTree = "<group>"; };
+		962A4A161EB573900036E49A /* BBBeanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBeanController.swift; sourceTree = "<group>"; };
+		96C0A7751E9D50DF00F1F059 /* BBExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBExtensions.swift; sourceTree = "<group>"; };
+		96C0A7781E9D53E900F1F059 /* BBColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBColors.swift; sourceTree = "<group>"; };
+		96C0A77F1E9D77DC00F1F059 /* Bean_iOS_OSX_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bean_iOS_OSX_SDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BuzzBand-aiavzfzuovakjwcpxdldjnqtzlqi/Build/Products/Debug-iphonesimulator/Bean-iOS-OSX-SDK/Bean_iOS_OSX_SDK.framework"; sourceTree = "<group>"; };
+		96C0A7801E9D77DC00F1F059 /* RPCircularProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RPCircularProgress.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BuzzBand-aiavzfzuovakjwcpxdldjnqtzlqi/Build/Products/Debug-iphonesimulator/RPCircularProgress/RPCircularProgress.framework"; sourceTree = "<group>"; };
 		96E01E6A1E9C05F3008675C7 /* BuzzBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E01E6F1E9C05F3008675C7 /* BBPairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPairController.swift; sourceTree = "<group>"; };
@@ -26,8 +39,9 @@
 		96E01E741E9C05F3008675C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E01E771E9C05F3008675C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E01E791E9C05F3008675C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E01E7F1E9C0B1C008675C7 /* plasma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = plasma.gif; path = ../../../../../Downloads/plasma.gif; sourceTree = "<group>"; };
+		96E01E7F1E9C0B1C008675C7 /* plasma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = plasma.gif; path = ../../../../Downloads/plasma.gif; sourceTree = "<group>"; };
 		BA591F7923D02D09E39AD295 /* Pods-BuzzBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzBand.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzBand/Pods-BuzzBand.release.xcconfig"; sourceTree = "<group>"; };
+		DC6F2773E5E81367AACC3FDE /* Pods_BuzzBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,16 +49,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0091E309370CCE572407BB /* libPods-BuzzBand.a in Frameworks */,
+				96C0A7811E9D77DC00F1F059 /* Bean_iOS_OSX_SDK.framework in Frameworks */,
+				96C0A7821E9D77DC00F1F059 /* RPCircularProgress.framework in Frameworks */,
+				DD70BC099249453AE90D8AC1 /* Pods_BuzzBand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C0A7741E9D503F00F1F059 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96E01E7F1E9C0B1C008675C7 /* plasma.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		96C0A7771E9D53DA00F1F059 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				96C0A7781E9D53E900F1F059 /* BBColors.swift */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
 		96E01E611E9C05F3008675C7 = {
 			isa = PBXGroup;
 			children = (
+				96C0A7741E9D503F00F1F059 /* Resources */,
 				96E01E6C1E9C05F3008675C7 /* BuzzBand */,
 				96E01E6B1E9C05F3008675C7 /* Products */,
 				E84273DE032166413467C888 /* Pods */,
@@ -63,13 +96,17 @@
 		96E01E6C1E9C05F3008675C7 /* BuzzBand */ = {
 			isa = PBXGroup;
 			children = (
+				96C0A7771E9D53DA00F1F059 /* helper */,
 				96E01E6D1E9C05F3008675C7 /* AppDelegate.swift */,
 				96E01E6F1E9C05F3008675C7 /* BBPairController.swift */,
+				962A4A161EB573900036E49A /* BBBeanController.swift */,
+				96C0A7751E9D50DF00F1F059 /* BBExtensions.swift */,
+				961237841EB95E1300FD4418 /* BBTransmission.swift */,
 				96E01E711E9C05F3008675C7 /* Main.storyboard */,
-				96E01E7F1E9C0B1C008675C7 /* plasma.gif */,
-				96E01E741E9C05F3008675C7 /* Assets.xcassets */,
 				96E01E761E9C05F3008675C7 /* LaunchScreen.storyboard */,
+				96E01E741E9C05F3008675C7 /* Assets.xcassets */,
 				96E01E791E9C05F3008675C7 /* Info.plist */,
+				9612377D1EB5C09C00FD4418 /* BuzzBand-Bridging-Header.h */,
 			);
 			path = BuzzBand;
 			sourceTree = "<group>";
@@ -77,7 +114,10 @@
 		DFCED5DC17CA5C593F6DA432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BD46C337C809025C247FE01 /* libPods-BuzzBand.a */,
+				9612377E1EB637BD00FD4418 /* CountdownLabel.framework */,
+				96C0A77F1E9D77DC00F1F059 /* Bean_iOS_OSX_SDK.framework */,
+				96C0A7801E9D77DC00F1F059 /* RPCircularProgress.framework */,
+				DC6F2773E5E81367AACC3FDE /* Pods_BuzzBand.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,7 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E01E701E9C05F3008675C7 /* BBPairController.swift in Sources */,
+				96C0A7761E9D50DF00F1F059 /* BBExtensions.swift in Sources */,
 				96E01E6E1E9C05F3008675C7 /* AppDelegate.swift in Sources */,
+				961237851EB95E1300FD4418 /* BBTransmission.swift in Sources */,
+				96C0A7791E9D53E900F1F059 /* BBColors.swift in Sources */,
+				962A4A171EB573900036E49A /* BBBeanController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arn95.BuzzBand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BuzzBand-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuzzBand/BuzzBand-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,7 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arn95.BuzzBand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BuzzBand-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuzzBand/BuzzBand-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

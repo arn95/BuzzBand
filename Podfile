@@ -1,6 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
 platform :ios, '10.3'
 target 'BuzzBand' do
     pod 'Bean-iOS-OSX-SDK'
+    pod 'RPCircularProgress'
+    pod 'Material', '~> 2.0'
+    pod 'SwiftyTimer'
 end
 
 pre_install do |install|

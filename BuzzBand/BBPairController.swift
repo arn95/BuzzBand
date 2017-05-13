@@ -7,27 +7,34 @@
 //
 
 import UIKit
+import RPCircularProgress
+import Bean_iOS_OSX_SDK
+import SwiftyTimer
 
 class BBPairController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate , UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var nearbyDevicesTable: UITableView!
+    @IBOutlet weak var circularProgress: RPCircularProgress!
     
     var beanManager: PTDBeanManager?
-    var myBean: PTDBean?
     var devicesArray = [PTDBean]()
+    var connectedBean: PTDBean?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        //self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.nearbyDevicesTable.delegate = self
+        self.nearbyDevicesTable.dataSource = self
         
         self.beanManager = PTDBeanManager()
         self.beanManager!.delegate = self
+        
+        circularProgress.enableIndeterminate()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        //self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,20 +59,43 @@ class BBPairController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegat
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "pairControllerToBeanController"){
+            let beanController = segue.destination as! BBBeanController
+            beanController.bean = self.connectedBean
+            beanController.beanManager = self.beanManager
+        }
+        
+    }
+    
     func beanManager(_ beanManager: PTDBeanManager!, didDiscover bean: PTDBean!, error: Error!) {
         
         if let e = error {
             print(e)
         }
-        
         self.devicesArray.append(bean)
         self.nearbyDevicesTable.reloadData()
+        circularProgress.isHidden = true;
+    }
+    
+    func beanManager(_ beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: Error!) {
+        let index = self.devicesArray.index(where: { (item) -> Bool in
+            item.name == "BuzzBand" // test if this is the item you're looking for
+        })
+        if (index != nil) {
+            self.devicesArray.remove(at: index!)
+            self.nearbyDevicesTable.deleteRows(at: [IndexPath.init(row: index!, section: 0)], with: UITableViewRowAnimation.automatic)
+        }
+        if (self.devicesArray.count == 0){
+        circularProgress.isHidden = false;
+        }
     }
     
     func connectToBean(bean: PTDBean!) {
         var error : NSError?
         self.beanManager?.connect(to: bean, withOptions:nil, error: &error)
-        bean.delegate = self
+        self.connectedBean = bean
     }
     
     
@@ -80,14 +110,17 @@ class BBPairController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("hi")
         let cell = self.nearbyDevicesTable.dequeueReusableCell(withIdentifier: "deviceCell", for: indexPath)
         cell.textLabel?.text = self.devicesArray[indexPath.row].name
-        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textColor = UIColor.init(hexString: BBColors.accent)
         cell.textLabel?.textAlignment = NSTextAlignment.center
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.connectToBean(bean: self.devicesArray[indexPath.row])
+        performSegue(withIdentifier: "pairControllerToBeanController", sender: self)
+    }
+    
 }
 
